@@ -92,7 +92,13 @@ I went throught the following steps:
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
-I implemented this step in lines # through # in my code in `yet_another_file.py` in the function `map_lane()`.  Here is an example of my result on a test image:
+I went through the following steps:
+* Step 1: Define conversions in x and y from pixels space to meters
+* Step 2: Fit new polynomials to x,y in world space    
+* Step 3: Draw the lane onto the warped blank image
+* Step 4: Warp the blank back to original image space using inverse perspective matrix (Minv)
+* Step 5: Combine the result with the original image
+* Step 6: Put text on an image
 
 ![alt text][image4]
 
