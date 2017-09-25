@@ -5,8 +5,8 @@
 [image1]: ./screenshot_cameracali.png "Camera Calibration"
 [image2]: ./ss_undist.png "Original vs Undistorted"
 [image3]: ./pipeline.png "Combine approach lane marking detection Top Down view
-[image5]: ./drawback.png "Drivable ego lane"
-[image6]: ./perspective.png "Source points for perpective transformation"
+[image4]: ./drawback.png "Drivable ego lane"
+[image5]: ./perspective.png "Source points for perpective transformation"
 [video1]: ./project_output.mp4 "Video1"
 [video2]: ./project_output_masked.mp4 "Video with mask"
 
@@ -53,7 +53,7 @@ A combine approach with color and gradient thresholds to generate a binary image
 
 The `warper()` function takes as inputs an image (`img`), as well as source (`src`) and destination (`dst`) points. For having a better resolution, I picked one straight line scenario and visualized the anchor point in the image, as shown below:
 
-![alt text][image6]
+![alt text][image5]
 
 This resulted in the following source and destination points:
 
@@ -93,7 +93,7 @@ I went throught the following steps:
 
 I implemented this step in lines # through # in my code in `yet_another_file.py` in the function `map_lane()`.  Here is an example of my result on a test image:
 
-![alt text][image5]
+![alt text][image4]
 
 ---
 
